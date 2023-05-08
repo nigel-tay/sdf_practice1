@@ -38,7 +38,8 @@ public class Server
         try {
             incoming = dis.readUTF();
             while (!incoming.equals("exit")) {
-
+                System.out.println(incoming);
+                incoming = dis.readUTF();
             }
         }
         catch (Exception e){
